@@ -386,7 +386,13 @@
                         <li class="@@datatableactive"><a href="data-table.html"> دیتا تیبل</a></li>
                     </ul>
                 </li>
+                <li class="navigation__sub @@formactive">
+                    <a href="default.htm"><i class="zmdi zmdi-collection-text"></i>مناطق</a>
 
+                    <ul>
+                        <li class="@@formelementactive"><a href="/Dashborad/zone">انتخاب شهرها</a></li>
+                    </ul>
+                </li>
                 <li class="navigation__sub @@formactive">
                     <a href="default.htm"><i class="zmdi zmdi-collection-text"></i> فرم ها</a>
 
@@ -545,7 +551,13 @@
             <small> به تجربه مدیریت منحصر به فرد در Material Design admin!
                 خوش آمدید
             </small>
-
+            <div>
+                @isset($id)
+                    <{{ @$component }} :id='{{ @$id }}'></{{ @$component }}>
+                @else
+                    <{{ @$component }} ></{{ @$component }}>
+                @endisset
+            </div>
             <div class="actions">
                 <a href="default.htm" class="actions__item zmdi zmdi-trending-up"></a>
                 <a href="default.htm" class="actions__item zmdi zmdi-check-all"></a>
@@ -561,7 +573,7 @@
             </div>
         </header>
 
-        <div class="row quick-stats">
+        {{--<div class="row quick-stats">
             <div class="col-sm-6 col-md-3">
                 <div class="quick-stats__item bg-light-blue">
                     <div class="quick-stats__info">
@@ -989,7 +1001,7 @@
 
                 <div class="widget-calendar__body"></div>
             </div>
-        </div>
+        </div>--}}
 
         <footer class="footer hidden-xs-down">
             <p>© تمام حقوق محفوظ است.</p>

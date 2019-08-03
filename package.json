@@ -35,6 +35,7 @@
         "salvattore": "^1.0.9",
         "tether": "^1.4.6",
         "vmap": "^2.2.2",
+        "vuejs-localization": "^1.0.3",
         "waves": "^0.1.1"
     }
 }

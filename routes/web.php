@@ -23,4 +23,11 @@ Auth::routes();
 Route::prefix('Dashborad')->namespace('Admin')->middleware('AdminCheck')->group(function () {
 
     Route::get('/', 'DashboradController@index')->name('Dashboard');
+
+    /* ============  STATE  ================*/
+    Route::post('/zone/LoadTotalZone', 'Zone\ZoneController@LoadTotalZone');
+    Route::resource('/zone', 'Zone\ZoneController');
+
+
+
 });
