@@ -31,7 +31,7 @@
         "jquery-sparkline": "^2.4.0",
         "jquery.flot": "^0.8.3",
         "jquery.scrollbar": "^0.2.11",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "salvattore": "^1.0.9",
         "tether": "^1.4.6",
         "vmap": "^2.2.2",
